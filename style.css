@@ -1,0 +1,310 @@
+.SEC{
+  margin: 0%;
+  width: 100%;
+  position: absolute;
+  .carrusel{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+  
+  }
+}
+  h5 {
+    font-size: 2.5vh;
+    color: #e2dada;
+    margin-left: 15vw;
+  
+  }
+  
+  
+  header {
+   
+    position: absolute;
+    display: grid;
+    align-items: center;
+    background-color: #020618;
+    height: 20vw;
+    position: sticky;
+    overflow: hidden;
+    z-index: 2;
+   
+  }
+  header h1 {
+    margin-top: 6vw;
+   font-size: 6.2vw;
+     filter: drop-shadow(0 0.4vw 0.1vw hsla(239, 100%, 82%, 0.781));
+    font-family: "Concert One", sans-serif;
+     text-shadow: 0.5vw 0vw 0.1vw #8aedfff6;
+     letter-spacing: 1.3vw;
+    }
+ 
+  .carousel-container {
+ 
+    position: relative;
+    width: 100%;
+  }
+  
+  .carrusel-elemento {
+    background-color:#ffffff;
+   position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #carrusel-caja {
+   
+    position: relative;
+    width: 550%;
+    height: 37vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .carrusel-elemento img {
+  
+    width: 90%;
+    height: 35vw;
+    background-size: contain;
+   
+   
+  
+  }
+  
+  #carrusel-caja {
+    animation: automatizacion 80s infinite linear;
+  }
+  
+  @keyframes automatizacion {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-20%); }
+    20% { transform: translateX(-40%); }
+    30% { transform: translateX(-60%); }
+    40% { transform: translateX(-80%); }
+    50% { transform: translateX(-100%); }
+    60% { transform: translateX(-80%); }
+    70% { transform: translateX(-60%); }
+    80% { transform: translateX(-40%); }
+    90% { transform: translateX(-20%); }
+    100% { transform: translateX(0); }
+  }
+  
+  .carousel-nav {
+    margin-top: -4vw;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   
+  }
+  
+  .carousel-prev, .carousel-next {
+    position: relative;
+    z-index: 1500;
+  }
+  
+ 
+.button-container {
+  position: fixed;
+  background-color: #000000;
+  box-shadow: 0 0 5px rgba(38, 0, 255, 0.925);
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  padding: 1vw;
+z-index: 200;
+width: 100%;
+height: 3vw;
+}
+
+button,a {
+  text-decoration: none;
+  background: linear-gradient(to right, #4c00ff, rgb(127, 165, 190), #a8fcff);
+ border-radius:1vw;
+  color: #2b0053;
+  text-align: center;
+  padding: 1vw; 
+  margin: 1vw; 
+  border: none; 
+  cursor: pointer;
+  font-family: "Concert One", sans-serif;
+   font-size: 1.5vw;
+  transition: box-shadow 0.3s ease;
+  width: 13.5vw;
+  text-shadow: 0.1vw 0.2vw 0.2vw #ffffff;
+  font-weight: bold;
+}
+
+button:hover, a:hover {
+
+  background-color: #ffffff;
+  color: #000;
+  box-shadow: 0 0 0.6vw 0.3vw rgb(153, 0, 255); 
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+ 
+}
+
+
+
+
+.audio1 {
+  opacity: 0;
+}
+
+/**************************************************************************************/
+/* CSS */
+.imagenlinea {
+  width: 100%;
+  text-align: center;
+
+  .enlinea {
+    width: 60vw;
+  }
+}
+
+
+
+/**************************************************************************************/
+
+
+
+/**************************************************************************************/
+
+
+
+
+/*estos estilos seran para el fondo principal del typin animacion*/
+
+
+
+
+
+
+
+
+h1 {
+  position: relative;
+  background: linear-gradient(to right, #075dfc, #0f118bef, #210af0, #210af0, #0b0d5eef, #416de6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  color: transparent;
+  font-size: 13vh;
+  font-family: 'Fredoka';
+
+}
+
+
+
+
+
+
+.card-container {
+  margin-top: 1%;
+  height: 40vw;
+  width: 100%;
+  margin-bottom: 1%;
+
+overflow: hidden;
+  }
+
+
+ 
+ 
+
+strong {
+  color: #0b0447;
+}
+
+
+.proyectos{
+  background-image: url('https://cdn.shopify.com/s/files/1/0705/3272/7061/files/Noche_Estrellada_sobre_el_Rodano_III.jpg?v=1673925335');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items:center;
+}
+
+
+
+.project-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4vw;
+ 
+}
+
+.project-item {
+  background-color: #ffffff;
+  border-radius: 1vw;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 28vw;
+  width: 40vw; /* Tamaño inicial del contenedor */
+  margin: 5vw 0 3vw 1vw;
+  padding: 1vw;
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+.project-item img {
+
+  width: 100%;
+  height: 21vw;
+  background-size: cover;
+
+}
+
+
+
+.project-item h3 {
+  font-size: 1.3vw;
+  font-family: "Concert One", sans-serif;
+  font-weight: bold;
+  padding: 2vw 0.2vw 2vw 0vw;
+  margin: -1vw -1vw 1vw -1vw;
+  color: #333;
+  background-color:#bab3f7;
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .proyectos{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 908px) {
+  .todo{
+    display: flex;
+    flex-direction: column;
+  }
+}
+

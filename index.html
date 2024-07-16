@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lobster&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=B612+Mono&family=Bad+Script&family=Fredoka:wght@400;500&family=Jua&family=Kosugi+Maru&family=Marck+Script&family=Oleo+Script:wght@400;700&family=Pacifico&family=Petit+Formal+Script&family=Quicksand&family=Roboto:ital,wght@1,100&family=Signika+Negative:wght@300&family=Special+Elite&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/6646/6646757.png">
+
+        <title>Proyectos   personales</title>
+</head>
+<body>
+    
+    <div class="button-container">
+        <button onclick="window.location.href='https://rosalesapazamilagros01.github.io/ProyectoDisenoGrafico/'"">Inicio</button>
+        <a href="#carrusel-contenido">Carrusel</a>
+        <a href="#proyectos">Proyectos</a>
+        <button onclick="window.location.href='https://rosalesapazamilagros01.github.io/Tareas-en-clase/'">Tareas</button>
+       
+        
+        
+     
+   
+    </div>
+    <header><h1>PROYECTOS   PERSONALES</h1></header>
+    <div class="carrusel">
+
+    <!-- ******BLOQUE DE SALIDAS LABORALES**-->
+    <br>
+    <div class="card-container">
+      <div id="carrusel-contenido">
+        <div id="carrusel-caja">
+          <div class="carrusel-elemento" data-duration="5s">
+            <img class="imagenes" src="img\bannerjoyeria.png">
+          </div>
+          <div class="carrusel-elemento">
+            <img class="imagenes" src="img\CRUNCHCHIKEN.png">
+          </div>
+          <div class="carrusel-elemento">
+            <img class="imagenes" src="img/grupollmbanner.png">
+          </div>
+          <div class="carrusel-elemento">
+            <img class="imagenes" src="img\exploracion.png">
+          </div>
+          <div class="carrusel-elemento">
+            <img class="imagenes" src="https://i.ytimg.com/vi/1_hGQ0gcZ9w/maxresdefault.jpg">
+          </div>
+          <div class="carrusel-elemento">
+            <img class="imagenes" src="https://www.coreldraw.com/static/cdgs/product_content/cdgs/essentials/2024/tools-coreldraw.jpg">
+          </div>
+          <div class="carrusel-elemento">
+            <img class="imagenes" src="https://www.coreldraw.com/static/cdgs/product_content/cdgs/2017/pillar-01.jpg">
+          </div>
+        </div>
+        <div class="carousel-nav">
+            <button class="pause-button" onclick="pauseAnimation()"><i class="fa fa-pause"></i></button>
+            <button class="resume-button" onclick="resumeAnimation()"><i class="fa fa-play"></i></button>
+        
+           
+           
+          </div>
+        </div>
+      </div>
+</div>
+
+
+
+<div class="proyectos" id="proyectos">
+
+
+<div class="project-container">  <div class="project-item">
+<section id="1">
+ 
+ 
+  <h3><strong>Banner de una empresa de joyería</strong>:<br>GROUP Cristals</h3>
+ 
+      <img src="img\bannerjoyeria.png" alt="Proyecto 1">
+
+    </div>
+    
+  </div>
+
+</section>
+
+  <div class="project-container">
+    <div class="project-item">
+  
+<section id="2">
+ 
+
+  <h3><strong>Banner de una empresa de comida</strong>:<br>CRUNCH-Chiken</h3>
+
+    <img src="img\CRUNCHCHIKEN.png" alt="Proyecto 1">
+
+    </div>
+ 
+  </div>
+</section>
+
+
+</div>
+
+<div class="proyectos">
+  <div class="project-container">
+    <div class="project-item">
+  <section id="3">
+  
+  
+  <h3><strong>Banner de una empresa de tecnología</strong>:<br>GRUPO LL Y M</h3>
+    
+        <img src="img/grupollmbanner.png" alt="Proyecto 1">
+  
+      </div>
+   
+    </div>
+  </section>
+  <br>
+  
+    <div class="project-container">    <div class="project-item">
+      
+    <section id="3">
+     
+    
+    <h3><strong>Banner de un concierto de</strong>:<br> ROCK</h3>
+      
+    
+          <img src="img\exploracion.png" alt="Proyecto 1">
+    
+        </div>
+     
+      </div>
+    </section>
+    <BR>
+    </div>
+   
+<script>
+    // Obtener el elemento que contiene la animación
+var animacion = document.getElementById('carrusel-caja');
+
+// Variable para controlar el estado de la animación
+var animado = true;
+
+// Función para pausar la animación
+function pauseAnimation() {
+  animado = false;
+  animacion.style.animationPlayState = 'paused';
+}
+
+// Función para reanudar la animación
+function resumeAnimation() {
+  animado = true;
+  animacion.style.animationPlayState = 'running';
+}
+
+// Evento para reanudar la animación cuando se hace clic en el botón de reanudar
+document.querySelector('.resume-button').addEventListener('click', resumeAnimation);
+
+// Evento para pausar la animación cuando se hace clic en el botón de pausar
+document.querySelector('.pause-button').addEventListener('click', pauseAnimation);
+</script>
+</body>
+</html>
